@@ -1,0 +1,52 @@
+body{
+  background: #F3F3F3;
+  color: black;
+}
+
+.card{
+    width: 280px;
+    height: 380px;
+    border-radius: 12px;
+    background: #FFF;
+}
+
+.card-img{
+    width: 260px;
+    height: 134px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.info{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card-body{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.card-btn{
+    background-color: aqua;
+}
+
+.home-container{
+    display: flex; 
+    gap: -10px;
+}
+
+.card-container{
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+
+}
+
+
+.cart{
+    color: red;
+    border: 1px solid red;
+}
+
