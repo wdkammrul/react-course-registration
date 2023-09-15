@@ -10,6 +10,9 @@ const Home = () => {
     // step-1 
     const [allCourse, setAllCourse] = useState([]);
 
+    // step-7 
+    const [selectedCourses, setSelectedCourses] = useState([]);
+
 
     // step-2 
     useEffect(() => {
@@ -22,8 +25,14 @@ const Home = () => {
     // step-4 
     // step-6 receive course
     const handleSelectCourse = (course) => {
-      console.log(course.name)
+    //   console.log(course.name)
+
+    // step-8 
+        setSelectedCourses([...selectedCourses,course])
+
     }
+
+    // console.log(selectedCourses)
 
 
 
@@ -47,7 +56,7 @@ const Home = () => {
                                 </div>
 
                                 {/* step-5  */}
-                                <button onClick={()=>handleSelectCourse(course)}>Select</button>
+                                <button onClick={()=>handleSelectCourse(course)} className='card-btn'>Select</button>
                             </div>
                         </div>
                     ))
@@ -55,7 +64,8 @@ const Home = () => {
                     }
                 </div>
                 <div className="cart">
-                    <h1>credit hour</h1>
+                    {/* step-9  */}
+                     <Cart selectedCourses={selectedCourses}></Cart>
                 </div>
 
 

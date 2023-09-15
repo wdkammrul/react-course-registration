@@ -1,7 +1,8 @@
 body{
   background: #F3F3F3;
-  color: black;
+  color: #1C1B1B;
 }
+
 
 .card{
     width: 280px;
@@ -28,7 +29,10 @@ body{
 }
 
 .card-btn{
-    background-color: aqua;
+    width: 260px;
+    border-radius: 8px;
+    border: 1px solid #2F80ED;
+    background: #2F80ED;
 }
 
 .home-container{
@@ -41,12 +45,16 @@ body{
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
-
 }
 
 
 .cart{
-    color: red;
-    border: 1px solid red;
+    /* color: red;
+    border: 1px solid red; */
+
+    width: 280px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #FFF;
 }
 

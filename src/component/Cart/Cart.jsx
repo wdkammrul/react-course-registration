@@ -1,11 +1,21 @@
+/* eslint-disable react/jsx-key */
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import './Cart.css'
 
-const Cart = () => {
+// step-10 
+const Cart = ({ selectedCourses }) => {
+    // console.log(selectedCourses)
     return (
         <div>
-            <h1>Cart</h1>
+            {/* // step-11  */}   
+            <h5>Total Course: {selectedCourses.length} </h5>
+            <h5>Course Name:</h5>
+            {selectedCourses.map((course) =>(
+                <li>{course.name}</li>
+             ))}
+             
         </div>
     );
 };
