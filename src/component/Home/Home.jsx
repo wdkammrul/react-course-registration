@@ -31,7 +31,7 @@ const Home = () => {
     // step-4 
     // step-6 receive course
     const handleSelectCourse = (course) => {
-        //   console.log(course.name)
+        
 
         //  step-12 
         const inStock = selectedCourses.find((item) => item.id == course.id);
