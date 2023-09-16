@@ -7,7 +7,8 @@ import './Cart.css'
 // step-10
 // step-18 receive remaining
 // step-23 receive totalCreditHour
-const Cart = ({ selectedCourses, remaining, totalCreditHour }) => {
+// step-31 receive totalPriceCount
+const Cart = ({ selectedCourses, remaining, totalCreditHour, totalPriceCount }) => {
     // console.log(selectedCourses)
     // console.log(remaining)
     return (
@@ -29,6 +30,10 @@ const Cart = ({ selectedCourses, remaining, totalCreditHour }) => {
 
             {/* step-24  */}
             <h3>Total Credit Hour : {totalCreditHour} hr</h3>
+
+            <hr className='border1' />
+
+            <h3>Total Price: {totalPriceCount} USD</h3>
 
         </div>
     );

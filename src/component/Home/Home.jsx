@@ -21,6 +21,9 @@ const Home = () => {
     // step-20 
     const [totalCreditHour, setTotalCreditHour] = useState(0)
 
+    // step-28 
+    const [totalPriceCount, setTotalPriceCount] = useState(0)
+
     // step-2 
     useEffect(() => {
         fetch('./course.json')
@@ -39,6 +42,10 @@ const Home = () => {
 
         let count = parseInt(course.credit);
 
+        // step-26 
+        let price = course.price;
+        console.log(price)
+
         if (inStock) {
             return toast("⚠️ Course limit reached, no more.")
         } else {
@@ -46,7 +53,12 @@ const Home = () => {
             // step-13 
             selectedCourses.forEach((item) => {
                 count = count + parseInt(item.credit);
+
+                // step-27 
+                price = price + item.price; 
             })
+
+         
 
             // console.log(count)
 
@@ -55,11 +67,15 @@ const Home = () => {
             // step-16 
             setRemaining(totalHourRemaining)
 
-
             // step-25 
             if (count > 20) {
                 return toast("⛔ Not enough credit hours 😢 ")
             } else {
+
+                // step-29 
+                setTotalPriceCount(price)
+                console.log(price)
+                
                 // step-21 
                 const totalCreditHourSum = parseInt(course.credit)
                 // console.log(totalCreditHourSum)
@@ -119,6 +135,9 @@ const Home = () => {
 
                         // step-22 
                         totalCreditHour={totalCreditHour}
+
+                        // step-30 
+                        totalPriceCount={totalPriceCount}
 
                     ></Cart>
 
