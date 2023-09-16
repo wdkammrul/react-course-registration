@@ -57,7 +57,7 @@ const Home = () => {
 
             // step-25 
             if (count > 20) {
-                return toast("Insufficient credit hours available !!!")
+                return toast("⛔ Not enough credit hours 😢 ")
             } else {
                 // step-21 
                 const totalCreditHourSum = parseInt(course.credit)
