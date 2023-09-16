@@ -12,6 +12,11 @@ const Home = () => {
     // step-7 
     const [selectedCourses, setSelectedCourses] = useState([]);
 
+    // step-15 
+    const [remaining, setRemaining] = useState(0)
+
+    // step-20 
+    const [totalCreditHour, setTotalCreditHour] = useState(0)
 
     // step-2 
     useEffect(() => {
@@ -27,11 +32,32 @@ const Home = () => {
         //   console.log(course.name)
 
         //  step-12 
-        const isExist = selectedCourses.find((item) => item.id == course.id);
-        if (isExist) {
+        const inStock = selectedCourses.find((item) => item.id == course.id);
+
+        let count = parseInt(course.credit);  
+
+        if (inStock) {
             return alert("Sadly, this course was pre-booked !!!")
-        }
-        else {
+        } else {
+
+            // step-13 
+            selectedCourses.forEach((item) => {
+                count = count + parseInt(item.credit);
+            })
+
+            console.log(count)
+            
+            // step-14 
+            const totalHourRemaining = 20 - count;
+            // step-16 
+            setRemaining(totalHourRemaining)
+
+            // step-21 
+            const totalCreditHourSum = parseInt(course.credit)
+            console.log(totalCreditHourSum)
+            setTotalCreditHour(totalCreditHour + totalCreditHourSum)
+
+            
             setSelectedCourses([...selectedCourses, course])
 
         }
@@ -69,7 +95,15 @@ const Home = () => {
                 </div>
                 <div className="cart">
                     {/* step-9  */}
-                    <Cart selectedCourses={selectedCourses}></Cart>
+                    <Cart 
+                    selectedCourses={selectedCourses}
+                    // step-17 
+                    remaining={remaining}
+
+                    // step-22 
+                    totalCreditHour={totalCreditHour}
+                 
+                    ></Cart>
                 </div>
 
 

@@ -12,15 +12,15 @@
         "name": "Introduction to Algorithms",
         "desc": "Explore web development basics to kickstart your project journey.",
         "image": "https://i.ibb.co/Sv8CW9R/Rectangle-2-3.png",
-        "credit": "2hrs",
-        "price": 20000
+        "credit": "15hr",
+        "price": 35000
     },
     {
         "id": 3,
         "name": "Introduction to C++ for DSA",
         "desc": "Excel in C++ Data Structures, Algorithms, Problem-Solving.",
         "image": "https://i.ibb.co/QDyVjm9/Rectangle-2-4.png",
-        "credit": "3hrs",
+        "credit": "10hr",
         "price": 25000
     },
     {
@@ -28,7 +28,7 @@
         "name": "Basic Data Structure",
         "desc": "Learn JavaScript fundamentals for dynamic web development.",
         "image": "https://i.ibb.co/2vq20vq/Rectangle-3.png",
-        "credit": "1.5hrs",
+        "credit": "4hr",
         "price": 18000
     },
     {
@@ -36,7 +36,7 @@
         "name": "Introduction to OOP Python",
         "desc": "Design and manage databases effectively using Python.",
         "image": "https://i.ibb.co/HX0DGjd/Rectangle-2.png",
-        "credit": "2.5hrs",
+        "credit": "3hr",
         "price": 22000
     },
     {
@@ -44,7 +44,7 @@
         "name": "Software Engineering",
         "desc": "Create responsive web designs to reach a broader audience.",
         "image": "https://i.ibb.co/kcj7St8/Rectangle-2-5.png",
-        "credit": "1.5hrs",
+        "credit": "5hr",
         "price": 18000
     },
     {
@@ -52,7 +52,7 @@
         "name": "AWS, Cloud Computing",
         "desc": "Register for Course: AWS, Cloud Computing.",
         "image": "https://i.ibb.co/q0kVVdt/Rectangle-3-1.png",
-        "credit": "1.5hrs",
+        "credit": "4hr",
         "price": 18000
     },
     {
@@ -60,7 +60,7 @@
         "name": "Database (MySQL)",
         "desc": "Master software testing essentials for quality assurance.",
         "image": "https://i.ibb.co/Yhvbv39/Rectangle-2-1.png",
-        "credit": "2hrs",
+        "credit": "2hr",
         "price": 20000
     },
     {
@@ -68,7 +68,7 @@
         "name": "Problem-Solving Part",
         "desc": "Design intuitive user interfaces for enhanced user experiences.",
         "image": "https://i.ibb.co/4Fnqk4y/Rectangle-2-6.png",
-        "credit": "2hrs",
+        "credit": "2hr",
         "price": 22000
     }
 ]
