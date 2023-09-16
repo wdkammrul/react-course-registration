@@ -53,6 +53,24 @@ body{
     padding-right: 10px;
 }
 
+.price{
+    color: rgba(28, 27, 27, 0.60);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.credit{
+    color: rgba(28, 27, 27, 0.60);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
 .card-btn{
     width: 260px;
     border-radius: 8px;
