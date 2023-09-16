@@ -27,7 +27,7 @@ const Home = () => {
             .then(data => setAllCourse(data))
     }, [])
 
-
+    
     // step-4 
     // step-6 receive course
     const handleSelectCourse = (course) => {
@@ -47,7 +47,7 @@ const Home = () => {
                 count = count + parseInt(item.credit);
             })
 
-            console.log(count)
+            // console.log(count)
 
             // step-14 
             const totalHourRemaining = Math.max(20 - count, 0);
