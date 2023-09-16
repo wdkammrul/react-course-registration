@@ -3,6 +3,8 @@
 import React, { useEffect, useState } from 'react';
 import './Home.css'
 import Cart from '../Cart/Cart';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Home = () => {
 
@@ -37,7 +39,7 @@ const Home = () => {
         let count = parseInt(course.credit);
 
         if (inStock) {
-            return alert("Sadly, this course was pre-booked !!!")
+            return toast("⚠️ Course limit reached, no more.")
         } else {
 
             // step-13 
@@ -54,9 +56,9 @@ const Home = () => {
 
 
             // step-25 
-            if(count > 20){
-                return alert("Insufficient credit hours available !!!")
-            }else{
+            if (count > 20) {
+                return toast("Insufficient credit hours available !!!")
+            } else {
                 // step-21 
                 const totalCreditHourSum = parseInt(course.credit)
                 // console.log(totalCreditHourSum)
@@ -64,7 +66,7 @@ const Home = () => {
 
 
                 setSelectedCourses([...selectedCourses, course])
-            }     
+            }
         }
 
     }
@@ -75,6 +77,9 @@ const Home = () => {
 
     return (
         <div className='container'>
+
+            < ToastContainer />
+
             <div className="home-container">
                 <div className="card-container">
 
@@ -109,6 +114,7 @@ const Home = () => {
                         totalCreditHour={totalCreditHour}
 
                     ></Cart>
+
                 </div>
 
 
