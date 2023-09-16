@@ -24,10 +24,17 @@ const Home = () => {
     // step-4 
     // step-6 receive course
     const handleSelectCourse = (course) => {
-    //   console.log(course.name)
+        //   console.log(course.name)
 
-    // step-8 
-        setSelectedCourses([...selectedCourses,course])
+        //  step-12 
+        const isExist = selectedCourses.find((item) => item.id == course.id);
+        if (isExist) {
+            return alert("Sadly, this course was pre-booked !!!")
+        }
+        else {
+            setSelectedCourses([...selectedCourses, course])
+
+        }
 
     }
 
@@ -55,14 +62,14 @@ const Home = () => {
                                 </div>
 
                                 {/* step-5  */}
-                                <button onClick={()=>handleSelectCourse(course)} className='card-btn'>Select</button>
+                                <button onClick={() => handleSelectCourse(course)} className='card-btn'>Select</button>
                             </div>
                         </div>
                     ))}
                 </div>
                 <div className="cart">
                     {/* step-9  */}
-                     <Cart selectedCourses={selectedCourses}></Cart>
+                    <Cart selectedCourses={selectedCourses}></Cart>
                 </div>
 
 
