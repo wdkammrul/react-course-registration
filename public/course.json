@@ -4,7 +4,7 @@
         "name": "C Programming",
         "desc": "Master C Programming for Full Course Registration System.",
         "image": "https://i.ibb.co/b1ZKBD2/Rectangle-2-2.png",
-        "credit": "1hr",
+        "credit": "2hr",
         "price": 15000
     },
     {
@@ -12,7 +12,7 @@
         "name": "Introduction to Algorithms",
         "desc": "Explore web development basics to kickstart your project journey.",
         "image": "https://i.ibb.co/Sv8CW9R/Rectangle-2-3.png",
-        "credit": "15hr",
+        "credit": "9hr",
         "price": 35000
     },
     {

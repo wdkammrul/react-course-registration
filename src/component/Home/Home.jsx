@@ -34,7 +34,7 @@ const Home = () => {
         //  step-12 
         const inStock = selectedCourses.find((item) => item.id == course.id);
 
-        let count = parseInt(course.credit);  
+        let count = parseInt(course.credit);
 
         if (inStock) {
             return alert("Sadly, this course was pre-booked !!!")
@@ -46,20 +46,25 @@ const Home = () => {
             })
 
             console.log(count)
-            
+
             // step-14 
-            const totalHourRemaining = 20 - count;
+            const totalHourRemaining = Math.max(20 - count, 0);
             // step-16 
             setRemaining(totalHourRemaining)
 
-            // step-21 
-            const totalCreditHourSum = parseInt(course.credit)
-            console.log(totalCreditHourSum)
-            setTotalCreditHour(totalCreditHour + totalCreditHourSum)
 
-            
-            setSelectedCourses([...selectedCourses, course])
+            // step-25 
+            if(count > 20){
+                return alert("Insufficient credit hours available !!!")
+            }else{
+                // step-21 
+                const totalCreditHourSum = parseInt(course.credit)
+                // console.log(totalCreditHourSum)
+                setTotalCreditHour(totalCreditHour + totalCreditHourSum)
 
+
+                setSelectedCourses([...selectedCourses, course])
+            }     
         }
 
     }
@@ -80,8 +85,8 @@ const Home = () => {
                                 <img className="card-img" src={course.image} alt="" />
                             </div>
                             <div className='card-body'>
-                                <h2>{course.name}</h2>
-                                <p><small>{course.desc}</small></p>
+                                <h2 className='card-course-name'>{course.name}</h2>
+                                <p className='course.desc'><small>{course.desc}</small></p>
                                 <div className="info">
                                     <p>$ Price: {course.price}</p>
                                     <p>Credit: {course.credit}</p>
@@ -95,14 +100,14 @@ const Home = () => {
                 </div>
                 <div className="cart">
                     {/* step-9  */}
-                    <Cart 
-                    selectedCourses={selectedCourses}
-                    // step-17 
-                    remaining={remaining}
+                    <Cart
+                        selectedCourses={selectedCourses}
+                        // step-17 
+                        remaining={remaining}
 
-                    // step-22 
-                    totalCreditHour={totalCreditHour}
-                 
+                        // step-22 
+                        totalCreditHour={totalCreditHour}
+
                     ></Cart>
                 </div>
 

@@ -30,10 +30,6 @@ const Cart = ({ selectedCourses, remaining, totalCreditHour }) => {
             {/* step-24  */}
             <h3>Total Credit Hour : {totalCreditHour} hr</h3>
 
-
-
-
-
         </div>
     );
 };

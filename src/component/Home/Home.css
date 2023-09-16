@@ -1,12 +1,14 @@
 body{
   background: #F3F3F3;
   color: #1C1B1B;
+   font-family: Inter;
+   width: auto;
 }
 
 
 .card{
     width: 280px;
-    height: 380px;
+    height: 342px;
     border-radius: 12px;
     background: #FFF;
 }
@@ -18,10 +20,33 @@ body{
     margin-top: 10px;
 }
 
+.card-course-name{
+    color: #1C1B1B;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: -0px;
+}
+
+.course.desc{
+    color: rgba(28, 27, 27, 0.60);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+    margin-top: -2px;
+}
+
 .info{
     display: flex;
     justify-content: space-evenly;
-}
+    color: rgba(28, 27, 27, 0.60);
+    font-family: Inter;
+    font-size: 16px;
+    margin-top: -20px;
+ }
 
 .card-body{
     padding-left: 10px;
