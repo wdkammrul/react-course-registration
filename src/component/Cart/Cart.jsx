@@ -8,12 +8,12 @@ import './Cart.css'
 const Cart = ({ selectedCourses }) => {
     // console.log(selectedCourses)
     return (
-        <div>
+        <div className='cart-container'>
             {/* // step-11  */}   
             <h5>Total Course: {selectedCourses.length} </h5>
             <h5>Course Name:</h5>
             {selectedCourses.map((course) =>(
-                <li>{course.name}</li>
+               <li className='cart-li'>{course.name}</li>
              ))}
              
         </div>

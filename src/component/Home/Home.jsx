@@ -6,7 +6,6 @@ import Cart from '../Cart/Cart';
 
 const Home = () => {
 
-
     // step-1 
     const [allCourse, setAllCourse] = useState([]);
 
@@ -59,9 +58,7 @@ const Home = () => {
                                 <button onClick={()=>handleSelectCourse(course)} className='card-btn'>Select</button>
                             </div>
                         </div>
-                    ))
-
-                    }
+                    ))}
                 </div>
                 <div className="cart">
                     {/* step-9  */}
