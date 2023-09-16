@@ -1,3 +1,50 @@
+.cart-container{
+    text-align: start;
+    margin-left: 18px;
+}
+
+.hour-remaining{
+    color: #2F80ED;
+    font-size: 17px;
+    line-height: 30px;     
+}
+
+.total-course{
+    color: #1C1B1B;
+    font-size: 20px;
+    margin-bottom: -24px;
+}
+
+.course-name{
+    color: #1C1B1B;
+    font-size: 20px;
+    line-height: normal;
+    margin-bottom: -1px;
+}
+
+
+.border{
+  border-bottom: 2px solid  rgba(28, 27, 27, 0.20);
+  width: 240px;
+  margin-right: 40px;
+  margin-top: -5px;
+  margin-bottom: -20px;
+  
+}
+
+.border1{
+    border-bottom: 2px solid  rgba(28, 27, 27, 0.20);
+    width: 240px;
+    margin-right: 40px;
+    margin-top: -5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+} 
+
+
+
+
 .cart-li{
     color: rgba(28, 27, 27, 0.60);
+    
 }

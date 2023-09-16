@@ -13,18 +13,26 @@ const Cart = ({ selectedCourses, remaining, totalCreditHour }) => {
     return (
         <div className='cart-container'>
 
+            {/* step-19 set remaining  */}
+            <h3 className='hour-remaining'>Credit Hour Remaining {remaining} hr</h3>
+            <hr className='border' />
+            <h5 className='total-course'>Total Course: {selectedCourses.length} </h5>
+            {/* // step-11  */}
+            <h5 className='course-name'>Course Name</h5>
+            <ol className="list-decimal ">
+                {selectedCourses.map((course) => (
+                    <li className='cart-li' key={course.id}>{course.name}</li>
+                ))}
+            </ol>
+
+            <hr className='border1' />
+
             {/* step-24  */}
             <h3>Total Credit Hour : {totalCreditHour} hr</h3>
 
-            {/* step-19 set remaining  */}
-            <h3>Credit Hour Remaining: {remaining} hr</h3>
 
-            {/* // step-11  */}
-            <h5>Total Course: {selectedCourses.length} </h5>
-            <h5>Course Name:</h5>
-            {selectedCourses.map((course) => (
-                <li className='cart-li' key={course.id}>{course.name}</li>
-            ))}
+
+
 
         </div>
     );
